@@ -1,6 +1,8 @@
+import { useState } from "react";
 import {Navbar,Container} from "react-bootstrap";
 
 export const NavBar = () => {
+    const [activeLink, setActiveLink] = useState('home')
   return (
    
     <Navbar expand="lg">
@@ -23,7 +25,17 @@ export const NavBar = () => {
                 <a href="#" className="">
                     <img src={} alt="" />
                 </a>
+
+                <a href="#" className="">
+                    <img src={} alt="" />
+                </a>
+                <a href="#" className="">
+                    <img src={} alt="" />
+                </a>
             </div>
+            <button className="vvd" onClick={()=>console.log('connect')}>
+                <span>Lets connect</span>
+            </button>
           </span>
         </Navbar.Collapse>
       </Container>
